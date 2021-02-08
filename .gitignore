@@ -9,6 +9,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 .ropeproject/
+*.lock
 
 # Distribution-related files
 *.egg-info
@@ -20,6 +21,7 @@ __pycache__/
 /.coverage
 /htmlcov
 .cache/
+.vscode/
 
 # Application files
 edx-dl.cache

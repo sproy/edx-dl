@@ -397,7 +397,8 @@ def parse_args():
                         version=__version__,
                         help='display version and exit')
 
-    args = parser.parse_args()
+    argv= ['https://courses.edx.org/courses/course-v1:UCx+STA01.1ucX+3T2020/course/','-u','liaozhenglei@outlook.com','-p','Livehappy2.', '--with-subtitles', '--youtube-dl-options','"-f best --sub-lang en"', '--ignore-errors']
+    args = parser.parse_args(args=argv)
 
 
     # Initialize the logging system first so that other functions
@@ -987,6 +988,7 @@ def main():
     """
     Main program function
     """
+    # sys.argv = ['-u liaozhenglei@outlook.com','-p Livehappy2.', '--with-subtitles', '--youtube-dl-options -f best --sub-lang en', '--ignore-errors', 'https://courses.edx.org/courses/course-v1:UCx+STA01.1ucX+3T2020/course/']
     args = parse_args()
     logging.info('edx_dl version %s', __version__)
     file_formats = parse_file_formats(args)

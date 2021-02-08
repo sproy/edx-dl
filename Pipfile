@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+beautifulsoup4 = ">=4.6.0"
+html5lib = ">=1.0.1"
+six = ">=1.11.0"
+requests = ">=2.18.4"
+youtube_dl = ">=2018.06.18"
+
+[requires]
+python_version = "3.9"
